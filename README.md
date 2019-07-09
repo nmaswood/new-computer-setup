@@ -4,9 +4,10 @@
 
 - map `CAPS-LOCK` to `CTRL`
 - install slack
+- install postman
 - login into apple account
 
-## Mac Configuration
+## Chrome Configuration
 
 - download chrome extensions
     - adblock pro
