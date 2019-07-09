@@ -1,6 +1,16 @@
-git config --global user.email "nasr@ironcladapp.com"
-git config --global user.name "Nasr Maswood"
+cd $HOME
 
+if [ ! -d "$HOME/zshrc" ]; then
+    echo "zshrc directory does not exist"
+    exit 1
+fi
+
+if [ -f "$HOME/.gitconfig" ]; then
+    echo "renaming .gitconfig"
+    mv .gitconfig .old-gitconfig
+fi
+
+ln -s zshrc/.gitconfig .gitconfig
 
 export CONFIG_FILE=$(cat <<-END
 Host *
