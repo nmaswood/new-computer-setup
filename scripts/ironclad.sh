@@ -48,6 +48,8 @@ brew cask install docker
 brew cask install google-cloud-sdk
 brew cask install minikube
 
+sudo gem install mustache
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 nvm install lts/dubnium
 nvm alias default lts/dubnium
